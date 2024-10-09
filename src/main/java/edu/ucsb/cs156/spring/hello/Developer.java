@@ -6,47 +6,49 @@ package edu.ucsb.cs156.spring.hello;
 
 public class Developer {
 
-    // This class is not meant to be instantiated
-    // so we make the constructor private
+	// This class is not meant to be instantiated
+	// so we make the constructor private
 
-    private Developer() {}
-    
-    /**
-     * Get the name of the developer
-     */
+	private Developer() {
+	}
 
-    public static String getName() {
-        // TODO: Change this to your name
-        // You may use just the name that is used on <https://bit.ly/cs156-f24-teams>
-        // i.e. your first name, or your first and initial of last name
+	/**
+	 * Get the name of the developer
+	 */
 
-        return "Chris G.";
-    }
+	public static String getName() {
+		// You may use just the name that is used on <https://bit.ly/cs156-f24-teams>
+		// i.e. your first name, or your first and initial of last name
 
-    /**
-     * Get the github id of the developer
-     * @return github id of the developer
-     */
+		return "Ajay";
+	}
 
-    public static String getGithubId() {
-        // TODO: Change this to your github id
-        return "cgaucho";
-    }
+	/**
+	 * Get the github id of the developer
+	 * 
+	 * @return github id of the developer
+	 */
 
-    /**
-     * Get the developers team
-     * @return developers team as a Java object
-     */
-    
-    public static Team getTeam() {
-        // TODO: Change this to your team name
-        Team team = new Team("f24-xx");
-        team.addMember("Alice");
-        team.addMember("Bob");
-        team.addMember("Chris G.");
-        team.addMember("Danny");
-        team.addMember("Eve");
-        team.addMember("Frances");
-        return team;
-    }
+	public static String getGithubId() {
+		// TODO: Change this to your github id
+		return "cgaucho";
+	}
+
+	/**
+	 * Get the developers team
+	 * 
+	 * @return developers team as a Java object
+	 */
+
+	public static Team getTeam() {
+		// TODO: Change this to your team name
+		Team team = new Team("f24-xx");
+		team.addMember("Alice");
+		team.addMember("Bob");
+		team.addMember("Chris G.");
+		team.addMember("Danny");
+		team.addMember("Eve");
+		team.addMember("Frances");
+		return team;
+	}
 }
